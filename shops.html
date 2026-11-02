@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shops | Dutch Blood Bowl Association</title>
+<meta name="description" content="Local and online suppliers of Blood Bowl products in the Netherlands.">
+<link rel="icon" href="dbba-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topbar" aria-label="DBBA pages">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="index.html"><img src="dbba-logo.png" alt=""><span class="brand-full">Dutch Blood Bowl Association</span><span class="brand-short">DBBA</span></a>
+    <div class="topbar-links">
+      <a href="index.html">Home</a>
+      <a href="leagues.html">Leagues</a>
+      <a href="tournaments.html">Tournaments</a>
+      <a href="shops.html" aria-current="page">Shops</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero slim">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Shops</div>
+      <h1>Gear up at a <span class="hl">local</span> shop</h1>
+      <p class="hero-sub">To support the community, we list local and online suppliers of Blood Bowl products. These listings are in no way sponsored links and are mentioned with good intentions.</p>
+    </div>
+    <img class="hero-logo" src="dbba-logo.png" alt="Dutch Blood Bowl Association">
+  </div>
+</header>
+<div class="flag" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<main class="wrap" id="main">
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>All shops</h2>
+        <p>Listed in alphabetical order.</p>
+      </div>
+    </div>
+
+    <div class="league-map">
+      <div class="map-card">
+        <svg id="league-map" data-pins="shops" role="group" aria-label="Map of the Netherlands with a pin for every shop city" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="map-side">
+        <h3>Find a shop near you</h3>
+        <p>Click a diamond on the map, or a city below, to show only the shops there.</p>
+        <ul class="diamond-list city-list" id="city-list"></ul>
+      </div>
+    </div>
+
+    <div class="filter">
+      <label class="skip-label" for="q" style="position:absolute;left:-999px">Filter shops</label>
+      <input type="search" id="q" placeholder="Filter by name or city" autocomplete="off">
+      <span class="count" id="count" aria-live="polite"></span>
+      <button class="btn-reset" id="clear" type="button" hidden>Show all</button>
+    </div>
+
+    <div class="grid" id="shops">
+      <article class="card shop"><h3>Arcane Forge</h3><address>Rijnstraat 25H<br>Amsterdam</address><div class="links"><a href="https://arcaneforge.nl" target="_blank" rel="noopener">arcaneforge.nl</a></div></article>
+      <article class="card shop"><h3>Bumblebeez</h3><address>Kremerstraat 6<br>Bergen op Zoom</address><div class="links"><a href="https://www.bumblebeez.nl" target="_blank" rel="noopener">bumblebeez.nl</a></div></article>
+      <article class="card shop"><h3>Games 'n Stuff</h3><address>George Stephensonstraat 18A<br>Zwolle</address><div class="links"><a href="https://www.gamesnstuff.com" target="_blank" rel="noopener">gamesnstuff.com</a></div></article>
+      <article class="card shop"><h3>Hobbykadohoek</h3><address>Opril 3-5<br>Goes</address><div class="links"><a href="https://www.hobbykadohoek.nl" target="_blank" rel="noopener">hobbykadohoek.nl</a></div></article>
+      <article class="card shop"><h3>Lamar Games</h3><address>Wigstraat 19A<br>Lelystad</address><div class="links"><a href="https://www.lamargames.nl" target="_blank" rel="noopener">lamargames.nl</a></div></article>
+      <article class="card shop"><h3>Orks &amp; Dorks</h3><address>Lange Noordstraat 16<br>Middelburg</address><div class="links"><a href="https://www.orksendorks.nl" target="_blank" rel="noopener">orksendorks.nl</a></div></article>
+      <article class="card shop"><h3>Startspeler.com</h3><address>Kerkstraat 32<br>Lommel, Belgium</address><div class="links"><a href="https://www.startspeler.com" target="_blank" rel="noopener">startspeler.com</a></div></article>
+      <article class="card shop"><h3>Tabletop Realm</h3><address>Kanaalweg 75A<br>Capelle aan den IJssel</address><div class="links"><a href="https://www.tabletoprealm.nl" target="_blank" rel="noopener">tabletoprealm.nl</a></div></article>
+      <article class="card shop"><h3>Tafelridder</h3><address>Oude Herengracht 11A<br>Leiden</address><div class="links"><a href="https://www.tafelridder.nl" target="_blank" rel="noopener">tafelridder.nl</a></div></article>
+      <article class="card shop"><h3>Vliegeruit</h3><address>Nieuwestad 79<br>Leeuwarden</address><div class="links"><a href="https://www.vliegeruit.com" target="_blank" rel="noopener">vliegeruit.com</a></div></article>
+      <article class="card shop"><h3>Zaanhammer</h3><address>Dubbele Buurt 17<br>Purmerend</address><div class="links"><a href="https://www.zaanhammer.nl" target="_blank" rel="noopener">zaanhammer.nl</a></div></article>
+    </div>
+
+    <p class="plain empty" id="none">No shops match that filter. <a href="contact.html">Know one we are missing?</a></p>
+
+    <p class="tba-note"><strong>Not listed?</strong> If you offer Blood Bowl products, <a href="contact.html">let us know</a> and we will gladly add your shop. If a retailer wants a link removed, we will do so as soon as possible, no questions asked.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="leagues.html">Leagues</a><a href="tournaments.html">Tournaments</a><a href="shops.html">Shops</a><a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/dbba_official" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/dutchbloodbowlassociation" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p>&copy; Dutch Blood Bowl Association. A neutral platform to grow Blood Bowl in the Netherlands.</p>
+  </div>
+</footer>
+<script src="nl-map.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

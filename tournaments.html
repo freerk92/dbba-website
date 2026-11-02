@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tournaments | Dutch Blood Bowl Association</title>
+<meta name="description" content="All Dutch Blood Bowl tournaments known to the DBBA: upcoming and recent.">
+<link rel="icon" href="dbba-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topbar" aria-label="DBBA pages">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="index.html"><img src="dbba-logo.png" alt=""><span class="brand-full">Dutch Blood Bowl Association</span><span class="brand-short">DBBA</span></a>
+    <div class="topbar-links">
+      <a href="index.html">Home</a>
+      <a href="leagues.html">Leagues</a>
+      <a href="tournaments.html" aria-current="page">Tournaments</a>
+      <a href="shops.html">Shops</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero slim">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Tournaments</div>
+      <h1>Pick your <span class="hl">tournament</span></h1>
+      <p class="hero-sub">All tournaments known to the DBBA. Anyone is welcome to <a href="contact.html">register a tournament</a> and add details. All forms of Blood Bowl are allowed: Blood Bowl, Sevens, Dungeon Bowl, Street Bowl, Blitz Bowl and more.</p>
+      <div class="legend">
+        <a class="nav-pill" href="#coming">Coming</a>
+        <a class="nav-pill" href="#past">Past</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="dbba-logo.png" alt="Dutch Blood Bowl Association">
+  </div>
+</header>
+<div class="flag" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<main class="wrap" id="main">
+
+  <section id="coming">
+    <div class="section-head">
+      <div>
+        <h2>Coming tournaments</h2>
+        <p>Sorted by date, soonest first.</p>
+      </div>
+    </div>
+    <div class="filter" role="group" aria-label="Filter by format">
+      <button class="btn-reset on" type="button" data-type="">All</button>
+      <button class="btn-reset" type="button" data-type="Blood Bowl Sevens">Sevens</button>
+      <button class="btn-reset" type="button" data-type="Blood Bowl">Blood Bowl</button>
+    </div>
+    <div class="tlist" id="coming-list"><p class="plain">Loading tournaments&hellip;</p></div>
+  </section>
+
+  <section id="past">
+    <div class="section-head">
+      <div>
+        <h2>Past tournaments</h2>
+        <p>The last two years, most recent first.</p>
+      </div>
+    </div>
+    <div class="tlist" id="past-list"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="leagues.html">Leagues</a><a href="tournaments.html">Tournaments</a><a href="shops.html">Shops</a><a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/dbba_official" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/dutchbloodbowlassociation" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p>&copy; Dutch Blood Bowl Association. A neutral platform to grow Blood Bowl in the Netherlands.</p>
+  </div>
+</footer>
+<script src="tournaments-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

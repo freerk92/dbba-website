@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organisations &amp; Leagues | Dutch Blood Bowl Association</title>
+<meta name="description" content="All known Dutch Blood Bowl leagues and organisations, with websites and contact details.">
+<link rel="icon" href="dbba-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topbar" aria-label="DBBA pages">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="index.html"><img src="dbba-logo.png" alt=""><span class="brand-full">Dutch Blood Bowl Association</span><span class="brand-short">DBBA</span></a>
+    <div class="topbar-links">
+      <a href="index.html">Home</a>
+      <a href="leagues.html" aria-current="page">Leagues</a>
+      <a href="tournaments.html">Tournaments</a>
+      <a href="shops.html">Shops</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero slim">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Organisations &amp; Leagues</div>
+      <h1>Find your <span class="hl">league</span></h1>
+      <p class="hero-sub">Every Dutch Blood Bowl league and organisation we know of, from Assen to Middelburg. Looking for a one-day event instead? Check the <a href="tournaments.html">tournaments</a>.</p>
+    </div>
+    <img class="hero-logo" src="dbba-logo.png" alt="Dutch Blood Bowl Association">
+  </div>
+</header>
+<div class="flag" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<main class="wrap" id="main">
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>All leagues</h2>
+        <p>Listed in alphabetical order. Filter by name, city or format. Is yours missing or out of date? <a href="contact.html">Tell us</a> and we will fix it.</p>
+      </div>
+    </div>
+
+    <div class="league-map">
+      <div class="map-card">
+        <svg id="league-map" data-pins="leagues" role="group" aria-label="Map of the Netherlands with a pin for every league city" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="map-side">
+        <h3>Find a league near you</h3>
+        <p>Click a diamond on the map, or a city below, to show only the leagues there.</p>
+        <ul class="diamond-list city-list" id="city-list"></ul>
+        <p class="small">Leagues without a fixed city, like the Dutch Open, are not on the map.</p>
+      </div>
+    </div>
+
+    <div class="filter">
+      <label class="skip-label" for="q" style="position:absolute;left:-999px">Filter leagues</label>
+      <input type="search" id="q" placeholder="Filter by name, city or format" autocomplete="off">
+      <span class="count" id="count" aria-live="polite"></span>
+      <button class="btn-reset" id="clear" type="button" hidden>Show all</button>
+    </div>
+
+    <div class="grid" id="leagues">
+      <article class="card league" data-logo="abba">
+        <h3><span class="idx">ABBA</span> Amsterdam Blood Bowl Association</h3>
+        <div class="where">Amsterdam</div>
+        <p>Playing Blood Bowl among many other games under the hood of 6Shooters.</p>
+        <div class="links"><a href="https://amsterdam6shooters.nl/" target="_blank" rel="noopener">6Shooters</a></div>
+      </article>
+
+      <article class="card league" data-logo="abbl">
+        <h3><span class="idx">ABBL</span> Arnhem Blood Bowl League</h3>
+        <div class="where">Arnhem</div>
+        <p>Hosting leagues in Arnhem.</p>
+        <div class="links"><a href="https://tourplay.net/en/blood-bowl/abbl-2627/news" target="_blank" rel="noopener">Tourplay</a></div>
+      </article>
+
+      <article class="card league" data-logo="bbbl">
+        <h3><span class="idx">BBBL</span> Bosche Blood Bowl League</h3>
+        <div class="where">Den Bosch &middot; Brabant</div>
+        <p>A tabletop Blood Bowl league based in Den Bosch.</p>
+        <div class="contact-line">E-mail: <a class="mail" data-u="smorchkovoleh" data-d="gmail.com">smorchkovoleh [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="bblock">
+        <h3><span class="idx">BBLOCK</span> Blood Bowl League Of Crossed Keys</h3>
+        <div class="where">Leiden</div>
+        <p>A tabletop Blood Bowl league based in Leiden. Also organisers of the Ramstel Cup.</p>
+        <div class="links"><a href="https://twitter.com/bblock_leiden" target="_blank" rel="noopener">Twitter</a></div>
+      </article>
+
+      <article class="card league" data-logo="big-bbl">
+        <h3><span class="idx">B.I.G. BBL</span> Bloed in 't Gooi Blood Bowl League</h3>
+        <div class="where">Hilversum</div>
+        <p>Hosting leagues of Blood Bowl in Hilversum.</p>
+        <div class="links"><a href="https://www.facebook.com/groups/417072494509765/" target="_blank" rel="noopener">Facebook</a></div>
+        <div class="contact-line">E-mail: <a class="mail" data-u="bigbbl.hilversum" data-d="gmail.com">bigbbl.hilversum [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="bb013">
+        <h3><span class="idx">013</span> Blood Bowl 013 <span class="invite">Invitation only</span></h3>
+        <div class="where">Tilburg</div>
+        <p>Blood Bowl league located in Tilburg.</p>
+      </article>
+
+      <article class="card league">
+        <img class="logo" src="images/leagues/bloodstorm.png" alt="Bloodstorm NL logo" loading="lazy">
+        <h3><span class="idx">Bloodstorm</span> Bloodstorm NL</h3>
+        <div class="where">Utrecht</div>
+        <p>Organises tabletop wargaming events in the Netherlands.</p>
+        <div class="links"><a href="http://www.bloodstormevents.nl/" target="_blank" rel="noopener">Website</a><a href="https://www.facebook.com/bloodstorm.nl" target="_blank" rel="noopener">Facebook</a></div>
+        <div class="contact-line">E-mail: <a class="mail" data-u="bloodstorm.nl" data-d="gmail.com">bloodstorm.nl [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="dutch-open">
+        <h3><span class="idx">Dutch Open</span> Dutch championship</h3>
+        <div class="where">Netherlands &middot; Tournament</div>
+        <p>Both the Dutch championship and an open tournament. Only Dutch players are eligible for the Dutch championship.</p>
+        <div class="links"><a href="https://sites.google.com/view/dutchopen/homepage" target="_blank" rel="noopener">Website</a></div>
+      </article>
+
+      <article class="card league" data-logo="flabby">
+        <h3><span class="idx">FLABBY</span> Frisian League of Allied Blood Bowl YoBs</h3>
+        <div class="where">Leeuwarden</div>
+        <p>Hosting leagues and tournaments at Buurthuis Welgelegen, Leeuwarden.</p>
+        <div class="links"><a href="https://www.flabby.frl/" target="_blank" rel="noopener">Website</a></div>
+        <div class="contact-line">WhatsApp or Discord: +31623818924 / @erik_frl<br>E-mail: <a class="mail" data-u="erikcats" data-d="gmail.com">erikcats [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="gotw">
+        <h3><span class="idx">GOTW</span> Gamers of the West</h3>
+        <div class="where">Rotterdam</div>
+        <p>Blood Bowl league in Rotterdam.</p>
+        <div class="links"><a href="http://www.gamersofthewest.com/" target="_blank" rel="noopener">Website</a><a href="https://tourplay.net/en/blood-bowl/gotw-rotterdam-2nd-season--2026/news" target="_blank" rel="noopener">Tourplay</a><a href="https://www.facebook.com/gotwwest/?locale=nl_NL" target="_blank" rel="noopener">Facebook</a></div>
+        <div class="contact-line">E-mail: <a class="mail" data-u="gamersofthewest" data-d="gmail.com">gamersofthewest [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league">
+        <img class="logo" src="images/leagues/hubble.jpg" alt="HUBBLE logo" loading="lazy">
+        <h3><span class="idx">HUBBLE</span> ESA colleagues league <span class="invite">Invitation only</span></h3>
+        <div class="where">Noordwijk</div>
+        <p>A private league hosted by and among colleagues from ESA.</p>
+      </article>
+
+      <article class="card league" data-logo="humbbl">
+        <h3><span class="idx">HUMBBL</span> Utrecht Minors Blood Bowl League</h3>
+        <div class="where">Utrecht</div>
+        <p>A round robin format Blood Bowl Sevens league.</p>
+        <div class="links"><a href="https://tourplay.net/en/blood-bowl/humbbl-season-1" target="_blank" rel="noopener">Tourplay</a></div>
+        <div class="contact-line">E-mail: <a class="mail" data-u="humbbl.utrecht" data-d="gmail.com">humbbl.utrecht [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="lbbl">
+        <h3><span class="idx">LBBL</span> Leiden Blood Bowl League</h3>
+        <div class="where">Leiden</div>
+        <p>Welcomes anyone who wants to play Blood Bowl Sevens! Organises a yearly league and two tournaments.</p>
+        <div class="links"><a href="https://sites.google.com/view/leidenbloodbowlleague" target="_blank" rel="noopener">Website</a><a href="https://tourplay.net/en/blood-bowl/leiden-blood-bowl-league" target="_blank" rel="noopener">Tourplay</a><a href="https://www.instagram.com/lbbl_official" target="_blank" rel="noopener">Instagram</a><a href="http://www.twitter.com/lbbl_official" target="_blank" rel="noopener">Twitter</a><a href="http://www.facebook.com/lbbl_official" target="_blank" rel="noopener">Facebook</a></div>
+      </article>
+
+      <article class="card league" data-logo="madhobbit">
+        <h3><span class="idx">MadHobbit</span> MadHobbit League</h3>
+        <div class="where">Amersfoort</div>
+        <p>Tabletop Blood Bowl league based in Amersfoort. Organisers of the Keistad Cup.</p>
+        <div class="links"><a href="https://twitter.com/MadhobbitA" target="_blank" rel="noopener">Twitter</a></div>
+      </article>
+
+      <article class="card league" data-logo="quickbowl">
+        <h3><span class="idx">Quickbowl</span> Winter of Violence</h3>
+        <div class="where">The Hague</div>
+        <p>Coaches in The Hague playing a league together.</p>
+        <div class="links"><a href="https://tourplay.net/en/blood-bowl/quickbowl-winter-of-violence" target="_blank" rel="noopener">Tourplay</a></div>
+        <div class="contact-line">E-mail: <a class="mail" data-u="oskar223215" data-d="gmail.com">oskar223215 [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="roffa">
+        <h3><span class="idx">R.O.F.F.A.</span> Rotterdam Official Fantasy Football Association</h3>
+        <div class="where">Rotterdam</div>
+        <p>Rotterdam league and organisers of the Kabouter Cup.</p>
+        <div class="links"><a href="https://sites.google.com/view/roffa-league" target="_blank" rel="noopener">Website</a><a href="https://tourplay.net/en/blood-bowl/roffa-rotterdam-season-2024" target="_blank" rel="noopener">Tourplay</a><a href="https://www.facebook.com/roffabloodbowl/?locale=hi_IN" target="_blank" rel="noopener">Facebook</a></div>
+        <div class="contact-line">E-mail: <a class="mail" data-u="r.o.f.f.a.league" data-d="gmail.com">r.o.f.f.a.league [at] gmail.com</a></div>
+      </article>
+
+      <article class="card league" data-logo="ttl">
+        <h3><span class="idx">TTL</span> Turnhout Trashers League</h3>
+        <div class="where">Turnhout &middot; Belgium</div>
+        <p>Hosting leagues at 'De Kolonisten' in Turnhout, just across the border.</p>
+        <div class="links"><a href="https://www.facebook.com/groups/1508911489176902/" target="_blank" rel="noopener">Facebook</a></div>
+      </article>
+
+      <article class="card league" data-logo="vsl">
+        <h3><span class="idx">VSL</span> Valhalla Skullcracker League</h3>
+        <div class="where">Assen</div>
+        <p>Blood Bowl Sevens league. Runs the 1st Tuesday of the month, 18:00-23:00. BB Club nights, open for games every Tuesday evening to catch up or play for fun.</p>
+        <div class="links"><a href="https://valhallagames.nl/" target="_blank" rel="noopener">Website</a><a href="https://www.instagram.com/valhallagc/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/valhallagcassen/?locale=nl_NL" target="_blank" rel="noopener">Facebook</a></div>
+      </article>
+
+      <article class="card league" data-logo="zbbl">
+        <h3><span class="idx">ZBBL</span> Zaanhammer Blood Bowl League</h3>
+        <div class="where">Purmerend</div>
+        <p>Hosting Blood Bowl Sevens in Purmerend and the surrounding area.</p>
+        <div class="links"><a href="https://www.zaanhammer.nl/" target="_blank" rel="noopener">Website</a><a href="https://www.instagram.com/zaanhammer/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/zaanhammer/" target="_blank" rel="noopener">Facebook</a></div>
+      </article>
+
+      <article class="card league" data-logo="zeebbl">
+        <h3><span class="idx">ZeeBBL</span> Zuidwest NL</h3>
+        <div class="where">Middelburg &middot; Bergen op Zoom &middot; Goes</div>
+        <p>Casual meet-ups at Orks and Dorks (Middelburg) and Bumblebeez (Bergen op Zoom). Monthly meet-ups in the library of Goes (Nerd Zaterdag) and a friendly WhatsApp group to meet casually otherwise.</p>
+        <div class="links"><a href="https://chat.whatsapp.com/Ey1xyBHUT770620UaP4fiS" target="_blank" rel="noopener">WhatsApp</a></div>
+      </article>
+
+    </div>
+    <p class="plain empty" id="none">No leagues match that filter. <a href="contact.html">Know one we are missing?</a></p>
+
+    <p class="tba-note"><strong>Note:</strong> some leagues do not (yet) have a logo. If you are a league commissioner and want your league's details or logo added or changed, <a href="contact.html">please contact the DBBA</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="leagues.html">Leagues</a><a href="tournaments.html">Tournaments</a><a href="shops.html">Shops</a><a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/dbba_official" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/dutchbloodbowlassociation" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p>&copy; Dutch Blood Bowl Association. A neutral platform to grow Blood Bowl in the Netherlands.</p>
+  </div>
+</footer>
+<script src="league-logos.js"></script>
+<script src="nl-map.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
