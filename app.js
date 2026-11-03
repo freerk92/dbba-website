@@ -176,6 +176,8 @@
     if (t.naf) {
       h.appendChild(el("span", "naf" + (t.naf === "pending" ? " pending" : ""), t.naf === "pending" ? "NAF pending" : "NAF approved"));
     }
+    if (t.major) h.appendChild(el("span", "t-tag major", "Major"));
+    h.appendChild(el("span", "t-tag " + (t.squad ? "squad" : "solo"), t.squad ? "Squad" : "Solo"));
     body.appendChild(h);
     body.appendChild(el("div", "t-meta", t.type + " · " + t.where));
     if (t.info) body.appendChild(el("p", null, t.info));
@@ -221,7 +223,7 @@
   if (cl && pl) {
     var type = "";
     var draw = function () {
-      var list = coming.filter(function (t) { return !type || t.type === type || (type === "Blood Bowl" && t.type === "Blood Bowl (teams)"); });
+      var list = coming.filter(function (t) { return !type || t.type === type; });
       fill(cl, list, false, "No tournaments announced for this format right now.");
     };
     draw();

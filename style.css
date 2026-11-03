@@ -461,6 +461,9 @@ html{scroll-behavior:smooth;}
 .t.past .t-date .d{color:var(--ink-muted);}
 .naf{display:inline-block;font-size:11.5px;font-weight:800;color:var(--navy);background:var(--accent);border-radius:3px;padding:1px 6px;margin-left:8px;vertical-align:1px;}
 .naf.pending{background:transparent;color:var(--ink-muted);border:1.5px solid var(--border);}
+.t-tag{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-muted);border:1.5px solid var(--border);border-radius:3px;padding:0 6px;margin-left:8px;vertical-align:1px;}
+.t-tag.squad{color:var(--accent-ink);border-color:var(--accent-ink);}
+.t-tag.major{color:var(--flag-white);background:var(--flag-blue);border-color:var(--flag-blue);}
 
 /* shops */
 .shop h3{font-size:20px;}
@@ -490,7 +493,7 @@ body > footer a:hover{color:var(--navy);text-decoration-thickness:3px;}
 
 /* hero artwork (still served from the old DBBA site) */
 .hero.has-art{
-  background:linear-gradient(90deg,rgba(26,43,76,.96) 0%,rgba(26,43,76,.82) 55%,rgba(26,43,76,.5) 100%),url("https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vVnvkfHtfH23FhNDcV1MtdPLXO3NRaBdlkVbitdQIARnf6Vy-GS2LKOE_NidjL5cOQ0JFmsGcmC3Jdi4mscyN8uQeqxwZh3GTsGinfjZAOsLkvkK6BtezW-3PPKtPaXQ-I3pmGwXTWD0NM5BMjYl999YGP4z5SBMrs20DNOC4G4rDoUkhjTg-HUAovlwA=w16383") center/cover no-repeat var(--navy);
+  background:linear-gradient(90deg,rgba(26,43,76,.96) 0%,rgba(26,43,76,.82) 55%,rgba(26,43,76,.5) 100%),url("images/hero.jpg") center/cover no-repeat var(--navy);
 }
 
 /* homemade league map */
