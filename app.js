@@ -23,6 +23,31 @@
     });
   }
 
+  /* ---------- photo gallery: click to enlarge ---------- */
+  var shots = document.querySelectorAll(".gallery a");
+  if (shots.length && typeof HTMLDialogElement === "function") {
+    var box = document.createElement("dialog");
+    box.className = "lightbox";
+    var big = document.createElement("img");
+    var shut = document.createElement("button");
+    shut.type = "button";
+    shut.className = "btn-reset";
+    shut.textContent = "Close";
+    box.appendChild(big);
+    box.appendChild(shut);
+    document.body.appendChild(box);
+    shut.addEventListener("click", function () { box.close(); });
+    box.addEventListener("click", function (e) { if (e.target === box) box.close(); });
+    shots.forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        big.src = a.href;
+        big.alt = a.querySelector("img").alt;
+        box.showModal();
+      });
+    });
+  }
+
   /* ---------- league filter ---------- */
   var q = document.getElementById("q");
   var leagues = document.getElementById("leagues") || document.getElementById("shops");

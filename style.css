@@ -491,10 +491,25 @@ body > footer a:hover{color:var(--navy);text-decoration-thickness:3px;}
 .league .logo{display:block;width:auto;height:104px;max-width:100%;object-fit:contain;margin:0 0 14px;background:var(--flag-white);border-radius:4px;padding:4px;}
 
 
-/* hero artwork (still served from the old DBBA site) */
+/* hero artwork: a page sets --art (and optionally --art-pos) on its hero, the home page uses the painting */
 .hero.has-art{
-  background:linear-gradient(90deg,rgba(26,43,76,.96) 0%,rgba(26,43,76,.82) 55%,rgba(26,43,76,.5) 100%),url("images/hero.jpg") center/cover no-repeat var(--navy);
+  background:linear-gradient(90deg,rgba(26,43,76,.96) 0%,rgba(26,43,76,.82) 55%,rgba(26,43,76,.5) 100%),var(--art,url("images/hero.jpg")) var(--art-pos,center)/cover no-repeat var(--navy);
 }
+
+/* photo gallery with click-to-enlarge */
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:clamp(120px,19vw,180px);gap:10px;margin-top:22px;}
+.gallery a{display:block;overflow:hidden;border-top:4px solid var(--accent);border-radius:0 0 6px 6px;box-shadow:0 2px 8px var(--shadow);background:var(--bg-alt);}
+.gallery a.tall{grid-column:3;grid-row:1 / span 2;}
+.gallery img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s;}
+.gallery a:hover img,.gallery a:focus-visible img{transform:scale(1.04);}
+@media (max-width:640px){
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .gallery a.tall{grid-column:auto;grid-row:span 2;}
+}
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh;overflow:visible;}
+dialog.lightbox::backdrop{background:rgba(17,28,51,.92);}
+dialog.lightbox img{display:block;max-width:96vw;max-height:88vh;object-fit:contain;border-radius:4px;}
+dialog.lightbox button{display:block;margin:10px auto 0;}
 
 /* homemade league map */
 .league-map{display:grid;grid-template-columns:minmax(0,470px) minmax(0,1fr);gap:28px;align-items:start;margin-bottom:36px;}
