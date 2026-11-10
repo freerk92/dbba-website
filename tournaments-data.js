@@ -8,6 +8,8 @@ const BLOODSTORM = ["Bloodstorm NL", "http://www.bloodstormevents.nl/"];
 const NAF = id => ["NAF tournament page", "https://member.thenaf.net/index.php?module=NAF&type=tournaments&func=view&id=" + id];
 
 const TOURNAMENTS = [
+  { name: "LBBL: Sunshine Smashers Tournament V", type: "Blood Bowl Sevens", date: "2027-06-06", where: "Leiden",
+    info: "Annual Blood Bowl Sevens summer tournament by the Leiden Blood Bowl League.", links: [LBBL_SUMMER] },
   { name: "Madhobbit Massacre Sevens", type: "Blood Bowl Sevens", date: "2027-05-16", where: "Amersfoort",
     info: "", naf: "approved", links: [NAF(12419)] },
   { name: "Madhobbit Massacre XXIII", type: "Blood Bowl", date: "2027-05-15", dateEnd: "2027-05-16", where: "Amersfoort",
