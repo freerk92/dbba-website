@@ -15,7 +15,7 @@ const LEAGUE_LOGOS = {
   "big-bbl": "images/leagues/big-bbl.jpg",
   "bb013": "images/leagues/bb013.png",
   "bblock": "images/leagues/bblock.jpg",
-  "madhobbit": "images/leagues/madhobbit.jpg",
+  "madhobbit": "images/leagues/madhobbit.png",
   "roffa": "images/leagues/roffa.jpg",
   "quickbowl": "images/leagues/quickbowl.png",
   "ttl": "images/leagues/turnhout_trashers.jpg"
